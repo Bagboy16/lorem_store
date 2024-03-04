@@ -1,0 +1,19 @@
+{
+  "name": "lorem-store",
+  "version": "1.0.0",
+  "description": "Online store backend example with Node JS and Drizzle ORM with a Postgres 15 Database.",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "Isaac Galviz",
+  "license": "ISC",
+  "dependencies": {
+    "drizzle-orm": "^0.29.4",
+    "postgres": "^3.4.3"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.20.14"
+  },
+  "type": "module"
+}
