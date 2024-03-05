@@ -4,12 +4,16 @@
   "description": "Online store backend example with Node JS and Drizzle ORM with a Postgres 15 Database.",
   "main": "server.js",
   "scripts": {
-    "test": "npm run test"
+    "dev": "node --env-file=.env ./src/index.js",
+    "db:generate": "drizzle-kit generate:pg --schema ./src/db/schema.js --out ./src/db/migrations",
+    "db:migrate": "node --env-file=.env ./src/db/migrate.js"
   },
   "author": "Isaac Galviz",
   "license": "ISC",
   "dependencies": {
     "drizzle-orm": "^0.29.4",
+    "express": "^4.18.3",
+    "morgan": "^1.10.0",
     "postgres": "^3.4.3"
   },
   "devDependencies": {
